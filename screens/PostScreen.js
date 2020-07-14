@@ -84,7 +84,6 @@ export default class PostScreen extends React.Component {
                     <Image source={{ uri: this.state.image }} style={{ width: "100%", height: "100%" }}></Image>
                 </View>
             </SafeAreaView>
-
         )
     }
 }

@@ -30,11 +30,9 @@ export default class ProfileScreen extends React.Component {
                     <View style={styles.avatarContainer}>
                         <Image
                             style={styles.avatar}
-                            source={this.state.user.avatar //avatar is not defined
-                                ? { uri: this.state.user.avatar }
-                                : require("../assets/authHeader.jpg")} />
+                            source={require("../assets/authHeader.jpg")} />
                     </View>
-                    <Text style={styles.name}>{this.state.user.name}</Text>
+                    <Text style={styles.name}>dugdkjgh</Text>
                 </View>
                 <View style={styles.statsContainer}>
                     <View style={styles.stat}>

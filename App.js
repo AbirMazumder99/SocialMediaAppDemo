@@ -65,12 +65,12 @@ const AppContainer = createStackNavigator(
       },
       {
         defaultNavigationOptions: {
-          tabBarOnPress: ({ navigation, defaulthandler }) => {
+          tabBarOnPress: ({ navigation, defaultHandler }) => {
             if (navigation.state.key === "Post") {
               navigation.navigate("postModal");
             } else {
               // FIXME: TypeError: defaulthandler is not a function
-              defaulthandler();
+              defaultHandler();
             }
           }
         },
@@ -78,7 +78,7 @@ const AppContainer = createStackNavigator(
           activeTintColor: "#161F3D",
           inactiveTintColor: "#B3BBC4",
           showLabel: false
-        },
+        }
       }
     ),
     postModal: {
@@ -91,6 +91,7 @@ const AppContainer = createStackNavigator(
   }
 );
 
+
 const AuthStack = createStackNavigator(
   {
     Login: LoginScreen,
@@ -98,6 +99,7 @@ const AuthStack = createStackNavigator(
   });
 
 export default createAppContainer(
+
   createSwitchNavigator(
     {
       Loading: LoadingScreen,
